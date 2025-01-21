@@ -1,33 +1,74 @@
-/* .logo{
-    font-size: 50px;
-} */
-
 .header {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px 20px;
-    background-color: #f0f0f0;
+    background-color: #f2d9d9;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 40px; /* school er font size */
+    font-weight: bold;
 }
 
 .nav ul {
     list-style: none;
-    display: flex; 
+    display: flex;
 }
 
 .nav li {
-    margin-right: 20px; /*sspacing betwween list itemsssssss */
+    margin-right: 30px;
 }
-.button{
+
+.button {
     padding: 8px 16px;
-    background-color: blue;
-    color: rgb(222, 205, 20);
-border-radius: 20px;
-    cursor: pointer;
+    background-color: rgb(22, 150, 105);
+    color: rgb(246, 248, 243);
     border-radius: 5px;
+    cursor: pointer;
 }
-.button:hover{
-    background-color: rgb(214, 214, 227);
+
+.button:hover {
+    background-color: rgb(150, 10, 10);
+}
+
+.burgirr {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+.hrr{
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+    .nav ul {
+        display: none;
+    }
+
+    .burgirr {
+        display: block;
+    }
+    .button{
+        display: none;
+    }
+    .hrr{
+        display: block; /* Show the hr */
+        border: 0;
+        border-top: 3px solid #cc9713;
+        margin: 10px 0;
+       
+    }
 }
 
 
@@ -76,3 +117,117 @@ background-image: url(/assets/elementary.png);
 
 
 /*this is the story section
+
+
+*/
+.stories {
+    padding: 2rem;
+    text-align: center;
+    background: linear-gradient(to bottom, #e0ed96, #f4f1f0);
+}
+.stories-grid{
+    display: flex;
+}
+.story-card{
+   border: 10px solid aqua;
+   border-radius: 100px;
+}
+
+
+
+
+
+
+
+
+/*this is thefooter/*
+*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.footer {
+    background-color: #2196F3;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem 4rem;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    gap: 1.5rem;
+}
+
+.lastcontent {
+    max-width: 300px;
+}
+
+
+
+.lastcontent h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.lastcontent p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.lastnav h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.lastnav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lastnav li {
+    margin-bottom: 0.5rem;
+}
+
+.lastnav a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.lastnav a:hover {
+    color: #FFC107;
+}
+
+.social-links h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.social-links div {
+    display: flex;
+    gap: 0.8rem;
+}
+
+
+
+.social-icon:hover {
+    background-color: #FFC107;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .social-links div {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
