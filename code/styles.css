@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 
 .header {
     display: flex;
@@ -122,7 +125,7 @@
 }
 
 .hero-image-container {
-    max-width: 40%; /* Adjust the image size */
+    max-width: 40%; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,15 +134,16 @@
 .hero-image {
     width: 100%;
     height: auto;
-    object-fit: cover; /* Keep proportions */
+    object-fit: cover; 
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 576px) {
     .hero {
         flex-direction:column-reverse;
         text-align: center;
+        margin-bottom: 200px; 
     }
-
+}
     .hero-content {
         max-width: 100%;
     }
@@ -148,7 +152,7 @@
         max-width: 80%;
         margin-top: 20px;
     }
-}
+
 
 
 
@@ -220,7 +224,7 @@
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-  
+    /*onkkk jamela tai shob card alada alada kora hoyeche*/
 .curricard img {
     max-width: 100%;
     height: auto;
@@ -265,10 +269,10 @@
 
 .yellobutton {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically if needed */
-    gap: 1rem; /* Add spacing between buttons */
-    margin-top: 2rem; /* Optional for spacing above */
+    justify-content: center; 
+    align-items: center; 
+    gap: 1rem; 
+    margin-top: 2rem; 
 }
 
 .aa {
@@ -287,21 +291,24 @@
     transform: scale(1.2);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+
+@media screen and (max-width: 576px) {
     .curriculumgrid {
-        flex-direction: column; /* Stack cards vertically */
+        flex-direction: column; 
         align-items: center;
     }
 
     .curricard {
-        width: 90%; /* Full width for smaller screens */
+        width: 90%; 
     }
 
     .aa {
         width: 40px;
         height: 40px;
         font-size: 1.2rem;
+    }
+    .yellobutton{
+        display:none;
     }
 }
 
@@ -316,6 +323,7 @@
     padding: 2rem;
     background: linear-gradient(to bottom, #fff, #d69891);
     font-family: Arial, sans-serif;
+    margin-top: 150px;
 }
 
 
@@ -415,7 +423,7 @@
     background-color: #555;
 }
 
-@media (max-width: 768px) {
+@media (max-width:576px) {
     .stories-grid {
         grid-template-columns: 1fr;
     }
@@ -514,7 +522,7 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 576px) {
     .footer {
         flex-direction: column;
         text-align: center;
